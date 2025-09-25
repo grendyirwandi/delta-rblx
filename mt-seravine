@@ -477,7 +477,7 @@ local SpeedSlider = SettingsTab:CreateSlider({
 -- Pause Time Slider
 local PauseSlider = SettingsTab:CreateSlider({
     Name = "⏱️ Pause Between Checkpoints",
-    Range = {0.5, 20},
+    Range = {0.5, 60},
     Increment = 0.5,
     Suffix = " seconds",
     CurrentValue = 2,
