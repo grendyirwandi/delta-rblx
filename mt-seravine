@@ -34,22 +34,14 @@ local Window = Rayfield:CreateWindow({
 -- Koordinat Mt. Aetherys
 local coordinates = {
     base = Vector3.new(-14, 20, 375),
-    cp1 = Vector3.new(448, 284, 833),
-    cp2 = Vector3.new(700, 313, 492),
-    cp3 = Vector3.new(972, 313, 489),
-    cp4 = Vector3.new(823, 448, 673),
-    cp5 = Vector3.new(377, 861, -428),
-    cp6 = Vector3.new(319, 1024, -455),
-    cp7 = Vector3.new(321, 1174, -584),
-    cp8 = Vector3.new(303, 1419, -140),
-    cp9 = Vector3.new(726, 1496, -143),
-    cp10 = Vector3.new(712, 1596, -346),
+    cp1 = Vector3.new(303, 1419, -140),
+    cp2 = Vector3.new(726, 1496, -143),
+    cp3 = Vector3.new(712, 1596, -346),
     summit = Vector3.new(730, 1802, -953),
 }
 
 local checkpointOrder = {
-    "base","cp1","cp2","cp3","cp4","cp5","cp6",
-    "cp7","cp8","cp9","cp10","summit"
+    "base","cp1","cp2","cp3","summit"
 }
 
 -- Config Variables
@@ -646,79 +638,6 @@ local TeleportCP3Button = TeleportTab:CreateButton({
         if HumanoidRootPart then
             instantTeleport(coordinates.cp3)
             print("📍 Instantly teleported to CP3")
-        end
-    end,
-})
-
-local TeleportCP4Button = TeleportTab:CreateButton({
-    Name = "📍 Teleport to CP4",
-    Callback = function()
-        if HumanoidRootPart then
-            instantTeleport(coordinates.cp4)
-            print("📍 Instantly teleported to CP4")
-        end
-    end,
-})
-
-local TeleportCP5Button = TeleportTab:CreateButton({
-    Name = "📍 Teleport to CP5",
-    Callback = function()
-        if HumanoidRootPart then
-            instantTeleport(coordinates.cp5)
-            print("📍 Instantly teleported to CP5")
-        end
-    end,
-})
-
--- Checkpoints Section 2 (CP6-CP10)
-local CP6to10Section = TeleportTab:CreateSection("📍 Checkpoints 6-10")
-
-local TeleportCP6Button = TeleportTab:CreateButton({
-    Name = "📍 Teleport to CP6",
-    Callback = function()
-        if HumanoidRootPart then
-            instantTeleport(coordinates.cp6)
-            print("📍 Instantly teleported to CP6")
-        end
-    end,
-})
-
-local TeleportCP7Button = TeleportTab:CreateButton({
-    Name = "📍 Teleport to CP7",
-    Callback = function()
-        if HumanoidRootPart then
-            instantTeleport(coordinates.cp7)
-            print("📍 Instantly teleported to CP7")
-        end
-    end,
-})
-
-local TeleportCP8Button = TeleportTab:CreateButton({
-    Name = "📍 Teleport to CP8",
-    Callback = function()
-        if HumanoidRootPart then
-            instantTeleport(coordinates.cp8)
-            print("📍 Instantly teleported to CP8")
-        end
-    end,
-})
-
-local TeleportCP9Button = TeleportTab:CreateButton({
-    Name = "📍 Teleport to CP9",
-    Callback = function()
-        if HumanoidRootPart then
-            instantTeleport(coordinates.cp9)
-            print("📍 Instantly teleported to CP9")
-        end
-    end,
-})
-
-local TeleportCP10Button = TeleportTab:CreateButton({
-    Name = "📍 Teleport to CP10",
-    Callback = function()
-        if HumanoidRootPart then
-            instantTeleport(coordinates.cp10)
-            print("📍 Instantly teleported to CP10")
         end
     end,
 })
