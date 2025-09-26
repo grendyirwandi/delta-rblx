@@ -33,7 +33,8 @@ local Window = Rayfield:CreateWindow({
 
 -- Koordinat Mt. Aetherys
 local coordinates = {
-    base = Vector3.new(-14, 20, 375),
+    base = Vector3.new(76, 20, 339),
+-- -14, 20, 375
     cp1 = Vector3.new(303, 1419, -140),
     cp2 = Vector3.new(726, 1496, -143),
     cp3 = Vector3.new(712, 1596, -346),
